@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9cbee7a2-97af-4aa5-9024-f8352b5666e2" name="kislovs.ru" url="http://kislovs.ru">
+        <fileTransfer host="kislovs.ru" port="33222" rootFolder="/web/supershop" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="33222" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,1352 @@
+@font-face {
+    font-family: Supermolot;
+    src: url(/template/fonts/Supermolot.otf);
+}
+@font-face {
+    font-family: "Supermolot Bold";
+    src: url("/template/fonts/Supermolot Bold.otf");
+}
+@font-face {
+    font-family: "Supermolot Light";
+    src: url("/template/fonts/Supermolot Light.otf");
+}
+@font-face {
+    font-family: "Supermolot Bold Italic";
+    src: url("/template/fonts/Supermolot Bold Italic.otf");
+}
+@font-face {
+    font-family: "Supermolot Italic";
+    src: url("/template/fonts/Supermolot Italic.otf");
+}
+@font-face {
+    font-family: "Supermolot Light Italic";
+    src: url("/template/fonts/Supermolot Light Italic.otf");
+}
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("/template/fonts/Proxima Nova Regular.otf");
+}
+@font-face {
+    font-family: "Proxima Nova Bold";
+    src: url("/template/fonts/Proxima Nova Bold.otf");
+}
+@font-face {
+    font-family: "Proxima Nova Light";
+    src: url("/template/fonts/Proxima Nova Light.otf");
+}
+@font-face {
+    font-family: "Proxima Nova Thin";
+    src: url("/template/fonts/Proxima Nova Thin.otf");
+}
+body{
+    background: #dde1e2;
+    width: 1400px;
+    height: 2585px;
+}
+.navbar{
+    top: 23px;
+    left: 5px;
+    z-index: 10;
+}
+.navbar-brand{
+    width: 170px;
+    height: 100px;
+    background: #ed1651;
+}
+.brand-text1{
+    font-family: Supermolot;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: relative;
+    top: 10px;
+    left:20px;
+}
+.brand-text2{
+    font-family: Supermolot;
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    position: relative;
+    top: 20px;
+    left:15px;
+}
+.navbar-nav{
+    background: white;
+    height: 60px;
+    width: 1000px;
+    position: relative;
+    top: -98px;
+    left: 176px;
+    z-index: 20;
+}
+.menu-item ul{
+    text-decoration: none;
+    position: relative;
+    left: -40px;
+
+}
+.menu-item li{
+    display: inline-block;
+    text-decoration: none;
+    width: 110px;
+    background: white;
+
+}
+.menu-item li a{
+    text-decoration: none;
+    display: block;
+    height: 60px;
+    color: black;
+    line-height: 60px;
+    text-align: center;
+    font-family: "Supermolot Bold";
+}
+
+.menu-item li a:hover{
+    color: white;
+    background: #021563;
+
+}
+.menu-login ul{
+    position: relative;
+    top:-70px;
+
+
+}
+.menu-login li{
+    position: relative;
+    display: inline-block;
+    padding-right: 20px;
+}
+.menu-login a{
+    display: block;
+    line-height: 60px;
+    text-align: center;
+
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}
+.login{
+    color: #f24e7b;
+}
+.login:hover{
+    color: #f24e7b;
+    text-decoration-line: underline;
+}
+.registration{
+    color: #d4d4d4;
+    text-decoration-line: underline;
+}
+.registration:hover{
+    color: #d4d4d4;
+}
+.cart{
+    position: absolute;
+
+    width: 200px;
+    height: 60px;
+    background: #021563;
+    top:60px;
+    left: 800px;
+}
+.summ_inCart{
+    position: relative;
+    top: 10px;
+    left:20px;
+    color: white;
+    font-family: Supermolot;
+    font-size: 20px;
+}
+.summ_inCart span{
+    font-size: 14px;
+}
+.items_inCart{
+    position: relative;
+    top:5px;
+    left:20px;
+    font-family: Supermolot;
+    font-size: 14px;
+    color: #5d6484;
+}
+.shopping_cart{
+    position: relative;
+    top: -48px;
+    left:130px;
+    color: #354482;
+}
+#topCarousel{
+    top: -138px;
+    left: -100px;
+    width: 1400px;
+    height: 708px;
+}
+.corousel-control{
+    position: relative;
+    height:75px;
+    background: white;
+    width:1160px;
+    top:-211px;
+    left: 20px;
+
+}
+.buttons{
+    line-height: 75px;
+    text-align: center;
+    padding-right: 30px;
+    font-size: 20px;
+}
+.prev-slide{
+
+
+    color: #999999;
+}
+.next-slide{
+    color: black;
+}
+.item_name{
+    position: relative;
+    top: -500px;
+    left: 200px;
+    font-family: "Supermolot Bold Italic";
+    text-transform: uppercase;
+    font-size: 50px;
+
+}
+.item_about{
+    position: relative;
+    top: -500px;
+    left:200px;
+    color: white;
+    font-size: 16px;
+    font-family: "Supermolot Light";
+}
+.item_button{
+    position: relative;
+    top: -550px;
+    left: 350px;
+    display: inline-block;
+    text-decoration: none;
+    padding: .7em 1.5em;
+    border:1px solid #ec1652;
+    color: white;
+    user-select: none;
+    font-family: "Supermolot Italic";
+}
+.item_button:hover{
+    text-decoration: none;
+}
+.features_items{
+position: relative;
+
+    left: 5px;
+    top:-253px;
+
+    width: 1160px;
+    background: white;
+    border-top: 1px solid #d1d3d4;
+    border-bottom: 1px solid #d1d3d4;
+}
+.new_item{
+    line-height: 70px;
+    font-family: "Supermolot Light";
+    color: #021562;
+    text-align: center;
+    padding-left: 20px;
+    font-size: 16px;
+}
+.single-products{
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 0px;
+    width: 280px;
+    height: 320px;
+}
+.productinfo text-center img{
+    position: relative;
+
+    height: 235px;
+    width: 279px;
+
+}
+.product_name{
+    display: block;
+    font-size: 14px;
+    font-family: Supermolot;
+    color: black;
+    line-height: 30px;
+    text-align: center;
+    padding-left: 20px;
+    width: 200px;
+    text-transform: lowercase;
+    text-transform: capitalize;
+}
+.product_price{
+    color:#ef2a60;
+    font-family: "Supermolot Light";
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    padding-right: 20px;
+}
+.promo{
+    background: white;
+    width: 1160px;
+    height: 300px;
+    position: relative;
+    top:-230px;
+    left: 5px;
+}
+.img-container1{
+    background-size: cover;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+
+}
+.img-container2{
+    display: inline-block;
+    width: 552px;
+    height: 300px;
+    background-size: cover;
+    overflow: hidden;
+
+}
+.recommended{
+    width: 1160px;
+    height: 390px;
+    background: white;
+    position: relative;
+    top:-210px;
+    left:5px;
+}
+.reccommended_control{
+    line-height: 50px;
+    text-align: center;
+    font-family: Supermolot;
+    font-size: 20px;
+    color:#021562;
+}
+.recommended_text{
+    margin-left: 20px;
+}
+.recommended_buttons{
+    margin-right: 20px;
+}
+.recommended_container{
+    left: -80px;
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 1160px;
+    height: 300px;
+    position: relative;
+    top: 60px;
+}
+.prefooter{
+    width: 1160px;
+    height: 400px;
+    position: relative;
+    left:5px;
+    top: -190px;
+    background-image: url("/upload/images/products/info.jpeg");
+    background-size: cover;
+    overflow: hidden;
+}
+.prefooter_header{
+    font-family: "Supermolot Bold";
+    color: #021562;
+    font-size: 20px;
+    position: relative;
+    display: block;
+    left:500px;
+    top: 40px;
+}
+.prefooter_text{
+    display:block;
+    position: relative;
+    width: 500px;
+    height: auto;
+    left: 500px;
+    top: 60px;
+    font-family: Supermolot;
+}
+
+footer-admin{
+    display: block;
+    margin-top: 20px;
+    width: 1171px;
+    height: 50px;
+    background: #01104c;
+    color: white;
+    position: relative;
+    left: 5px;
+    line-height: 50px;
+    text-align: center;
+
+}
+footer{
+    display: block;
+
+    width: 1165px;
+    height: 50px;
+    background: #01104c;
+    color: white;
+    position: absolute;
+    left: 135px;
+    line-height: 50px;
+    text-align: center;
+
+}
+.label{
+    font-family: "Supermolot Light Italic";
+    font-size: 60px;
+    color: black;
+    text-transform: uppercase;
+
+}
+.register_form{
+    height: 400px;
+    width: 1160px;
+    background: white;
+    position: relative;
+    left: 5px;
+}
+.fio{
+    display: inline-block;
+    width:400px;
+    padding-top: 30px;
+    padding-left:120px;
+}
+.register_form p {
+    font-family:"Supermolot Light";
+    color: #afafaf;
+    line-height: 20px;
+    padding-top: 40px;
+}
+.register_form input{
+
+
+    border: 0px;
+    background: #e9e9e9;
+    outline: none;
+    height: 50px;
+    width: 400px;
+    color: black;
+    font-size: 14px;
+
+    font-family: "Supermolot Light";
+}
+
+.pass{
+    display: inline-block;
+    padding-left: 220px;
+}
+
+.register_form input[type=submit]{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    font-family: Supermolot;
+    color: #ffffff;
+    font-size: 20px;
+    background: #d93442;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    top: 40px;
+    left: 400px;
+}
+
+.log_form{
+    position: relative;
+    background: white;
+    width: 1160px;
+    height: 400px;
+    left:5px;
+}
+.log_form p {
+    font-family:"Supermolot Light";
+    color: #afafaf;
+    line-height: 20px;
+    padding-top: 40px;
+}
+.log_form input{
+
+
+    border: 0px;
+    background: #e9e9e9;
+    outline: none;
+    height: 50px;
+    width: 400px;
+    color: black;
+    font-size: 14px;
+
+    font-family: "Supermolot Light";
+}
+
+.log_form .tryregister {
+    display: inline-block;
+    position: relative;
+    left: 200px;
+    padding-left: 20px;
+    height: 380px;
+    top: -205px;
+    border-left: 1px solid #e9e9e9;
+}
+.log_form .login_register_button{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 10px;
+    border: 2px solid #d93442;
+    font-family: Supermolot;
+    color: #878787;
+    font-size: 20px;
+    background: transparent;
+    padding: 1px 1px 1px 1px;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    top: -280px;
+    left: 120px;
+    width: 80px;
+    height: 40px;
+}
+.forget_pass{
+    position: relative;
+    text-decoration: none;
+    text-decoration: underline;
+    color: #f9a7bd;
+    left: 340px;
+    top: -300px;
+
+}
+.forget_pass:hover {
+text-decoration: underline;
+    color: #f9a7bd;
+}
+.log_register{
+    moz-border-radius: 10px;
+    border: 2px solid #d93442;
+    font-family: Supermolot;
+    color: white;
+    font-size: 20px;
+    background: #d93442;
+    padding: 1px 1px 1px 1px;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    top: 95px;
+    left: 120px;
+    width: 240px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.log_register:hover {
+    moz-border-radius: 10px;
+    border: 2px solid #d93442;
+    font-family: Supermolot;
+    color: white;
+    font-size: 20px;
+    background: #d93442;
+    padding: 1px 1px 1px 1px;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    top: 95px;
+    left: 120px;
+    width: 240px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.cabinet_form{
+    width: 1160px;
+    height:1100px;
+    background: white;
+    left:20px;
+    position: relative;
+}
+.user_info_fio{
+    padding-top: 20px;
+    margin-left: 40px;
+    font-family: "Supermolot Light";
+}
+.cabinet_form h1{
+    font-family: "Supermolot Light Italic";
+}
+.cabinet_form p{
+    font-family:"Supermolot Light";
+    color: #afafaf;
+    line-height: 20px;
+    padding-top: 10px;
+}
+.cabinet_form input{
+    border: 0px;
+    background: #e9e9e9;
+    outline: none;
+    height: 50px;
+    width: 400px;
+    color: black;
+    font-size: 14px;
+    font-family: "Supermolot Light Italic";
+}
+.address{
+    margin-left: 40px;
+}
+.build_room{
+
+}
+.build{
+    display: inline-block;
+
+}
+.build input{
+    width: 100px;
+}
+.room{
+    margin-left: 195px;
+    display: inline-block;
+}
+.room input{
+
+    width: 100px;
+}
+.cabinet_passwd{
+    margin-left: 40px;
+}
+.cabinet_form input[type=submit]{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    font-family: Supermolot;
+    color: #ffffff;
+    font-size: 20px;
+    background: #d93442;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    top: 40px;
+    left: 40px;
+
+}
+.container-admin{
+    width: 1160px;
+    height: 1150px;
+}
+.sidemenu{
+    margin-left: 20px;
+    display: inline-block;
+    width:200px;
+    height: 1100px;
+    background: #34495e;
+}
+.admin_brand{
+    width: 200px;
+    height: 120px;
+    background: #2ecc71;
+
+}
+.admin_text1{
+    font-family: "Proxima Nova Light";
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 30px;
+    padding-top: 20px;
+}
+.admin_text2{
+    font-family: "Proxima Nova Bold";
+    font-size: 50px;
+    text-transform: uppercase;
+    color:white;
+    position: relative;
+    margin-left: 26px;
+    top: -30px;
+}
+.sidemenu-menu{
+    font-family: "Proxima Nova";
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 40px;
+    text-align: left;
+
+}
+.sidemenu-button {
+    display: block;
+    line-height: 40px;
+    text-align: left;
+    margin: 10px;
+    text-decoration: none;
+    color: #788991;
+    transition: background 2s ease;
+}
+.sidemenu-button a{
+    color: #788991;
+    transition: color 1s ease;
+}
+.sidemenu-button:hover a{
+    color: white;
+    text-decoration: none;
+}
+.sidemenu-button:hover i{
+    transition: color 1s ease;
+}
+.sidemenu-button:hover i{
+    color: lightgreen;
+}
+.sidemenu-button:hover{
+    background: #243342;
+
+}
+.sidemenu-down{
+    position: relative;
+    display: block;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    text-align: center;
+    margin: 10px;
+    top: 680px;
+}
+.sidemenu-down-button a{
+    text-decoration: none;
+}
+.sidemenu-down-button a:hover{
+    text-decoration: none;
+}
+.admin_user{
+    color: white;
+}
+.admin_user:hover{
+    color: white;
+}
+.admin_logout{
+    color: lightgreen;
+    text-decoration: none;
+
+}
+.admin_logout:hover{
+    color: lightgreen;
+    text-decoration: none;
+
+}
+.admin-content{
+    position: absolute;
+    display: inline-block;
+    width: 960px;
+    height: 1100px;
+    background: #ecf0f1;
+}
+.admin-logo{
+    position: relative;
+    font-family: "Proxima Nova Light";
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    top:20px;
+    left: 20px;
+}
+.new_category{
+    position: relative;
+    top:40px;
+    left:100px;
+
+}
+.new_category input{
+    border: 0px;
+    background: white;
+    outline: none;
+    height: 50px;
+    width: 300px;
+    color: black;
+    font-size: 14px;
+
+    font-family: "Proxima Nova";
+}
+.category_name{
+    display: inline-block;
+}
+.category_sort_order{
+    display: inline-block;
+
+}
+.category_sort_order input{
+    position: relative;
+    left:50px;
+    width: 40px;
+    text-align: center;
+}
+.category_status{
+    position: relative;
+    top:-16px;
+    left:20px;
+    display: inline-block;
+    border-radius: 0;
+    background: transparent;
+    height: 34px;
+    padding: 5px;
+    border: 0;
+
+    line-height: 1;
+    -webkit-appearance: none;
+    width: 268px;
+}
+.category_status select{
+    position: relative;
+    top:18px;
+}
+.category_add_button{
+    display: inline-block;
+    position: relative;
+    left:-60px;
+
+}
+.category_add_button input{
+    width: 100px;
+    font-size: 20px;
+    color: lightgreen;
+    background: transparent;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+.categories{
+    position: relative;
+    top:70px;
+    left:40px;
+    display: block;
+    width: 880px;
+    height: auto;
+    min-height: 400px;
+    background: white;
+    border-radius: 15px;
+}
+.categories table{
+    position: relative;
+    width: 840px;
+    margin-left: 20px;
+    top: 15px;
+    font-family: "Proxima Nova";
+    border-bottom: 1px solid #dee1e2;
+    line-height: 40px;
+    text-align: center;
+
+
+}
+.categories table td{
+    width: 280px;
+
+}
+.categories table thead{
+    color: #dee1e2;
+    text-transform: uppercase;
+    border-bottom: 1px solid #dee1e2;
+}
+.categories table thead:hover tr:hover {
+    background: white;
+    border-left: 0;
+}
+.categories table tr{
+    border-bottom: 1px solid #dee1e2;
+    transition: background 1s ease;
+
+}
+.categories table tr:hover{
+    border-bottom: 1px solid #dee1e2;
+    background: #f6f8fc;
+    border-left: 3px solid #8e44ad;
+
+}
+.categories table tr a{
+    color: #944db1;
+    text-decoration: underline;
+}
+.new_item_form{
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+    width: 920px;
+    height: 1000px;
+    top: 23px;
+}
+.item_information{
+    background: white;
+    position: relative;
+    top: -30px;
+    left:30px;
+    width: 820px;
+    height: 300px;
+    border-radius: 15px;
+}
+.item_logo{
+    display: block;
+    font-family: "Proxima Nova";
+    text-transform: uppercase;
+    color: #95a5a6;
+    padding-left: 10px;
+    line-height: 30px;
+    text-align: left;
+    position: relative;
+    top:10px;
+    border-bottom: 1px solid #dee1e2;
+
+}
+.item_text{
+    display: inline-block;
+    position: relative;
+    top: -50px;
+    font-family: "Proxima Nova Thin";
+    left: 20px;
+    width:300px;
+
+}
+.radio_group{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    position: relative;
+    top:30px;
+    left: 200px;
+    text-align: left;
+    font-family: "Proxima Nova Light";
+    color: #95a5a6;
+}
+.item_foto{
+    background: white;
+    position: relative;
+
+    left:30px;
+    width: 820px;
+    height: 300px;
+    border-radius: 15px;
+
+}
+.item_variant{
+    background: white;
+    position: relative;
+    top: 30px;
+    left:30px;
+    width: 820px;
+    height: 250px;
+    border-radius: 15px;
+}
+.foto{
+    left:15px;
+    position: relative;
+    top:20px;
+    display: inline-block;
+    width: 195px;
+    height: 230px;
+
+}
+.foto-img{
+    position: relative;
+    left:7.5px;
+    top:7.5px;
+
+    width: 180px;
+    height: 180px;
+    background-size: cover;
+    overflow: hidden;
+}
+.foto-img img{
+    background-size: cover;
+    overflow: hidden;
+    width: 180px;
+
+}
+.file_upload{
+    position: relative;
+    top:10px;
+    right: 30px;
+    overflow: hidden;
+    font-size: 1em;        /* example */
+    height: 2em;           /* example */
+    line-height: 2em       /* the same as height */
+}
+.file_upload > button{
+    float: right;
+    width: 8em;            /* example */
+    height: 100%;
+    background: transparent;
+    border: 0;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    color: #099d48;
+}
+.file_upload > div{
+    padding-left: 1em      /* example */
+}
+.file_upload input[type=file]{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(20);
+    letter-spacing: 10em;     /* IE 9 fix */
+    -ms-transform: scale(20); /* IE 9 fix */
+    opacity: 0;
+    cursor: pointer
+}
+.varians{
+    position: relative;
+    top:20px;
+    left:20px;
+    font-family: "Proxima Nova Thin";
+
+}
+.single_variant{
+    margin-top: 20px;
+}
+.single_variant input[type=text]{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    outline: none;
+}
+.single_variant button{
+    position: relative;
+    background: transparent;
+    border: 0px;
+    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    color: #ad0000;
+    outline:none;
+}
+.item_submit{
+    position: relative;
+    top:60px;
+    left: 350px;
+
+}
+.item_submit input[type=submit]{
+    background: transparent;
+    outline: none;
+    border: none;
+    color:#099d48;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+.product{
+    display: block;
+    width: 1170px;
+    height: 1100px;
+    margin-left: 11px;
+    margin-top:50px;
+
+}
+.product_category_logo{
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+    font-family: "Supermolot Light Italic";
+    font-size: 50px;
+
+}
+.site-content{
+    position: absolute;
+    display: block;
+}
+.container{
+    display: block;
+    width: 1160px;
+    height: 2560px;
+}
+.back_to_catalog{
+    display: block;
+    font-family: "Supermolot Light";
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+.back_to_catalog a{
+    color: #ed1651;
+}
+.product_container{
+    display: block;
+    background: white;
+    width: 1164px;
+    height: 570px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.product_container_foto{
+position: relative;
+    display: inline-block;
+    top:-80px;
+    margin-left: 20px;
+
+    width: 400px;
+    height: 550px;
+}
+.product_container_about{
+    position: relative;
+
+    display: inline-block;
+    margin: 10px;
+
+    width: 360px;
+    height: 550px;
+}
+.product_container_price{
+    display: inline-block;
+    margin: 10px;
+
+    width: 300px;
+    height: 550px;
+}
+.photo-frame{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    border: 0;
+}
+.mini_foto_corusel{
+    width: 360px;
+    height: 100px;
+    position: relative;
+    display: block;
+    align-content: center;
+
+
+
+}
+.single_mini_foto{
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    margin-top: 20px;
+    left: 30px;
+}
+.product_container_about_name{
+    display: block;
+    position: absolute;
+    font-family: "Supermolot Italic";
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 3px solid red;
+    line-height: 30px;
+    text-align: center;
+    top: 20px;
+    width: 360px;
+
+}
+.product_container_about_about{
+    font-family: "Supermolot Italic";
+    display: block;
+    position: absolute;
+    top: 100px;
+    padding: 10px;
+}
+.product_container_about_variant{
+    font-family: Supermolot;
+    display: block;
+    position: absolute;
+    padding: 10px;
+    top:500px;
+}
+.product_container_about_variant select{
+    width: 200px;
+    background: #e9e9e9;
+    border-radius: 0;
+    border: 0;
+    text-align: center;
+    -webkit-appearance: none;
+    line-height: 20px;
+
+}
+.product_container_price_block{
+    position: absolute;
+    border: 1px solid grey;
+    width: 300px;
+    height: 200px;
+    box-shadow: 1px 1px grey ;
+}
+.product_container_price_block_price{
+    position: relative;
+    padding: 10px;
+    width: 280px;
+    font-family: "Supermolot Bold";
+    color: red;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    top: 50px;
+}
+.product_container_price_block_avaylability{
+    position: relative;
+    top:50px;
+    width: 300px;
+    text-align: center;
+}
+.add_to_cart{
+    position: relative;
+    top:70px;
+    width: 300px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.add_to_cart a{
+    background: red;
+    color: white;
+    border: 0;
+    text-decoration: none;
+    padding: 10px;
+}
+.add-to-cart a:hover{
+    background: red;
+    color: white;
+    border: 0;
+    text-decoration: none;
+    padding: 10px;
+}
+.category_corusel{
+    border-radius: 15px;
+    position: relative;
+    width: 1160px;
+    height: 350px;
+    top:20px;
+    background: white;
+}
+#footer-else{
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 1169px;
+    top:1050px;
+}
+.catalog-container{
+    display: block;
+    position: absolute;
+
+    width: 1169px;
+    height: 1300px;
+    margin:6px;
+    top:160px;
+}
+.latest_product_block{
+    display: block;
+    position: relative;
+    background: white;
+    width: 1169px;
+    height: 1040px;
+    border-radius: 15px;
+
+
+
+}
+.catalog-logo{
+    font-family: "Supermolot Light Italic";
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+.heading{
+    line-height: 40px;
+}
+.cart-container{
+    display: block;
+    position: absolute;
+
+    width: 1169px;
+    height: 1300px;
+    margin:6px;
+    top:160px;
+}
+.items_in_cart{
+    background: white;
+    position: relative;
+    width: 1160px;
+    min-height: 200px;
+    height: auto;
+    border-radius: 15px;
+
+}
+.cart-table{
+    padding: 10px;
+}
+.cart-table table{
+    width: 1140px;
+}
+.cart-table table thead{
+    line-height: 30px;
+    border-bottom: 1px solid #9e9e9e;
+    text-align: center;
+    font-family: "Supermolot Light";
+    text-transform: capitalize;
+    color: #9e9e9e;
+}
+.back-line{
+    display: block;
+    position: relative;
+    width: 1140px;
+    height: 100px;
+
+}
+.cart_back{
+position: relative;
+    display: block;
+    position: relative;
+    line-height: 60px;
+    padding-left: 40px;
+
+}
+.cart_back a{
+
+    width: 60px;
+    height:0px;
+    font-family: "Supermolot Light";
+    font-size: 14px;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.4em 0.3em;
+    text-decoration: none;
+}
+.cart_back a:hover{
+    text-decoration: none;
+}
+.cart_checkout{
+    display: inline-block;
+    position: relative;
+    top:-40px;
+    right: 40px;
+
+
+}
+.cart_checkout a{
+    background: red;
+    color: white;
+    padding: 0.4em 0.3em;
+    text-decoration: none;
+}
+.cart_checkout a:hover{
+    text-decoration: none;
+}
+.cart_itog {
+    display: block;
+    position: relative;
+    right: 40px;
+    line-height: 50px;
+    top: -30px;
+    font-family: "Supermolot Light Italic";
+    font-size: 20px;
+}
+.cart_itog span{
+    font-family: "Supermolot Bold Italic";
+}
