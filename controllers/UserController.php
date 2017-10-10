@@ -83,6 +83,32 @@ class UserController
         require_once ROOT.'/views/user/login.php';
         return true;
     }
+    public function actionCartLogin()
+    {
+
+        if (isset($_POST['submit'])){
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+
+            $errors=false;
+            if (!User::checkEmail($email)) {
+                $errors[] = 'Неправильный email';
+            }
+            if (!User::checkPassword($password)) {
+                $errors[] = 'Пароль не должен быть короче 6-ти символов';
+            }
+
+            $userId = User::checkUserData($email,$password);
+            if ($userId == false){
+                $errors[] ='Не правильный  email или пароль';
+            } else{
+                User::auth($userId);
+                header("Location: /cart/checkout");
+            }
+
+        }
+
+    }
     public function actionLogout()
     {
         session_start();
