@@ -410,7 +410,7 @@ footer{
 }
 .register_form{
     height: 400px;
-    width: 1160px;
+    width: 1169px;
     background: white;
     position: relative;
     left: 5px;
@@ -465,7 +465,7 @@ footer{
 .log_form{
     position: relative;
     background: white;
-    width: 1160px;
+    width: 1169px;
     height: 400px;
     left:5px;
 }
@@ -567,7 +567,7 @@ text-decoration: underline;
     text-decoration: none;
 }
 .cabinet_form{
-    width: 1160px;
+    width: 1169px;
     height:1100px;
     background: white;
     left:20px;
@@ -1228,7 +1228,7 @@ position: relative;
     position: absolute;
     left: 0;
     width: 1169px;
-    top:1050px;
+    margin-top:20px;
 }
 .catalog-container{
     display: block;
@@ -1504,4 +1504,23 @@ position: relative;
     width: 1160px;
     height: auto;
 }
+.order_accept{
+    width: 1169px;
+    height: 300px;
+    background: white;
+    border-radius: 15px;
+    font-family: "Supermolot Light";
+    font-size: 20px;
 
+}
+.order_accept_text{
+    padding: 15px;
+}
+
+.order_accept_text a{
+    margin-top: 40px;
+    text-decoration: none;
+    background: red;
+    color: white;
+    padding: 0.5em 0.5em;
+}

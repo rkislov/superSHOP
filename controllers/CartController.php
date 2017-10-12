@@ -214,4 +214,17 @@ class CartController
         require_once(ROOT . '/views/cart/checkout3.php');
         return true;
     }
+    public function actionCheckoutFinal($orderId)
+    {
+        $categories = array();
+        $categories = Category::getCategoriesList();
+
+
+
+        $order = Order::getOrderById($orderId);
+
+
+        require_once(ROOT . '/views/cart/checkoutFinal.php');
+        return true;
+    }
 }
