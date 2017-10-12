@@ -157,13 +157,61 @@ class CartController
 
 
 
+
             $result = Order::saveStage2($oId,$userCity,$userStreet,$userBuild,$userRoom,$userShip,$userComment);
-            header("Location: /cart/cgeckout3/$oId");
+            header("Location: /cart/checkout3/$oId");
 
 
         }
 
         require_once(ROOT . '/views/cart/checkout2.php');
+        return true;
+    }
+    public function actionCheckout3($orderId)
+    {
+        $categories = array();
+        $categories = Category::getCategoriesList();
+        $productsInCart = Cart::getProducts();
+
+        if ($productsInCart == false){
+            header("Location: /");
+        }
+        $productsIds = array_keys($productsInCart);
+        $products = Product::getProdustsByIds($productsIds);
+
+        $totalPrice = Cart::getTotalPrice($products);
+
+        $totalQuantity = Cart::countItems();
+        $order = array();
+        $order = Order::getOrderById($orderId);
+
+
+
+
+        $result=false;
+        if (!User::isGuest()) {
+            // Если пользователь не гость
+            // Получаем информацию о пользователе из БД
+            $userId = User::checkLogged();
+            $user = User::getUserById($userId);
+
+
+
+        }
+
+        if (isset($_POST['submit'])){
+
+
+            $orderId = $_POST['orderId'];
+
+            $result = Order::saveStage3($orderId);
+            Cart::clear();
+            header("Location: /cart/checkoutFinal/$orderId");
+
+
+        }
+
+        require_once(ROOT . '/views/cart/checkout3.php');
         return true;
     }
 }
