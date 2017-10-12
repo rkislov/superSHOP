@@ -39,7 +39,7 @@
         </div>
         <div class="sidemenu-menu">
             <div class="sidemenu-button">
-                <a href="#"><i class="fa fa-shopping-cart"></i> Заказы</a></>
+                <a href="/admin/order"><i class="fa fa-shopping-cart"></i> Заказы</a></>
         </div>
         <div class="sidemenu-button">
             <a href="#"><i class="fa fa-user"></i> Пользователи</a>

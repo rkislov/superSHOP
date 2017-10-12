@@ -92,5 +92,6 @@ class Cart
         return $totalPrice;
     }
 
+
 }
 ?>

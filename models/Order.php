@@ -115,15 +115,16 @@ class Order
         // Соединение с БД
         $db = Db::getConnection();
         // Получение и возврат результатов
-        $result = $db->query('SELECT id, user_name, user_phone, date, status FROM product_order ORDER BY id DESC');
+        $result = $db->query("SELECT id, order_num, order_email, products, status, timestamp FROM order_info WHERE products IS NOT null AND products > '' ORDER BY timestamp DESC");
         $ordersList = array();
         $i = 0;
         while ($row = $result->fetch()) {
             $ordersList[$i]['id'] = $row['id'];
-            $ordersList[$i]['user_name'] = $row['user_name'];
-            $ordersList[$i]['user_phone'] = $row['user_phone'];
-            $ordersList[$i]['date'] = $row['date'];
+            $ordersList[$i]['order_num'] = $row['order_num'];
+            $ordersList[$i]['order_email'] = $row['order_email'];
             $ordersList[$i]['status'] = $row['status'];
+            $ordersList[$i]['products'] = $row['products'];
+            $ordersList[$i]['timestamp'] = $row['timestamp'];
             $i++;
         }
         return $ordersList;
@@ -137,17 +138,20 @@ class Order
     public static function getStatusText($status)
     {
         switch ($status) {
+            case '0':
+                return '<span style="color: #9dacad;">Отменен</span>';
+                break;
             case '1':
-                return 'Новый заказ';
+                return '<span style="color: blue;">Принят</span>';
                 break;
             case '2':
-                return 'В обработке';
+                return '<span style="color: green;">Отгружен</span>';
                 break;
             case '3':
-                return 'Доставляется';
+                return '<span style="color: orange;">У курьера</span>';
                 break;
             case '4':
-                return 'Закрыт';
+                return '<span style="color: purple">Доставлен</span>';
                 break;
         }
     }
@@ -235,6 +239,23 @@ class Order
         $result->bindParam(':date', $date, PDO::PARAM_STR);
         $result->bindParam(':status', $status, PDO::PARAM_INT);
         return $result->execute();
+    }
+    public static function getOrderTotalPrice($products)
+    {
+        $productsQuantity = json_decode($products, true);
+
+        // Получаем массив с индентификаторами товаров
+        $total =0;
+        if($productsQuantity) {
+            $productsIds = array_keys($productsQuantity);
+            $products = Product::getProdustsByIds($productsIds);
+
+            foreach ($products as $item) {
+                // Находим общую стоимость: цена товара * количество товара
+                $total += $item['price'] * $productsQuantity[$item['id']];
+            }
+        }
+        return $total;
     }
 
 }
