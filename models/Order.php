@@ -115,7 +115,7 @@ class Order
         // Соединение с БД
         $db = Db::getConnection();
         // Получение и возврат результатов
-        $result = $db->query("SELECT id, order_num, order_email, products, status, timestamp FROM order_info WHERE products IS NOT null AND products > '' ORDER BY timestamp DESC");
+        $result = $db->query("SELECT id, order_num, order_email, products, status, timestamp FROM order_info WHERE products IS NOT null AND products > '' AND is_delete=0 ORDER BY timestamp DESC");
         $ordersList = array();
         $i = 0;
         while ($row = $result->fetch()) {
@@ -152,6 +152,26 @@ class Order
                 break;
             case '4':
                 return '<span style="color: purple">Доставлен</span>';
+                break;
+        }
+    }
+    public static function getStatusTextOrderView($status)
+    {
+        switch ($status) {
+            case '0':
+                return '<span style="color: #9dacad; font-size: 20px">(<span style="text-decoration: underline; text-decoration-style: dashed;">Отменен</span>)</span>';
+                break;
+            case '1':
+                return '<span style="color: blue;  font-size: 20px;">(<span style="text-decoration: underline; text-decoration-style: dashed;">Принят</span>)</span>';
+                break;
+            case '2':
+                return '<span style="color: green;  font-size: 20px">(<span style="text-decoration: underline; text-decoration-style: dashed;">Отгружен</span>)</span>';
+                break;
+            case '3':
+                return '<span style="color: orange;  font-size: 20px">(<span style="text-decoration: underline; text-decoration-style: dashed;">У курьера</span>)</span>';
+                break;
+            case '4':
+                return '<span style="color: purple;  font-size: 20px">(<span style="text-decoration: underline; text-decoration-style: dashed;">Доставлен</span>)</span>';
                 break;
         }
     }
@@ -201,10 +221,10 @@ class Order
         // Соединение с БД
         $db = Db::getConnection();
         // Текст запроса к БД
-        $sql = 'DELETE FROM product_order WHERE id = :id';
+        $sql = 'UPDATE order_info SET is_delete=1 WHERE id = :id';
         // Получение и возврат результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
-        $result->bindParam(':id', $id, PDO::PARAM_INT);
+        $result->bindParam(':id', $id, PDO::PARAM_STR);
         return $result->execute();
     }
     /**
@@ -256,6 +276,31 @@ class Order
             }
         }
         return $total;
+    }
+    public static function deleteOrderProductItem($orderId, $productId)
+    {
+        $db = Db::getConnection();
+        $order = Order::getOrderById($orderId);
+        $productsArray = json_decode($order['products'],true);
+        unset($productsArray[$productId]);
+
+
+       if (empty($productsArray)){
+            $sql = 'UPDATE order_info SET is_delete = 1, products=null WHERE id = :id';
+            $result=$db->prepare($sql);
+            $result->bindParam(':id',$orderId,PDO::PARAM_STR);
+            $result->execute();
+            return 0;
+
+        } else{
+            $products = json_encode($productsArray);
+            $sql = 'UPDATE order_info SET products=:products WHERE id = :id';
+            $result = $db->prepare($sql);
+            $result->bindParam(':products', $products,PDO::PARAM_STR);
+            $result->bindParam(':id', $orderId,PDO::PARAM_STR);
+            $result->execute();
+            return 1;
+        }
     }
 
 }

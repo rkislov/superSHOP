@@ -38,6 +38,7 @@
         // Управление заказами:
         'admin/order/update/([0-9,A-Z,-]+)' => 'adminOrder/update/$1',
         'admin/order/delete/([0-9,A-Z,-]+)' => 'adminOrder/delete/$1',
+        'admin/order/deleteProduct/([0-9,A-Z,-]+)/([0-9,A-Z,-]+)' => 'adminOrder/deleteProduct/$1/$2',
         'admin/order/view/([0-9,A-Z,-]+)' => 'adminOrder/view/$1',
         'admin/order' => 'adminOrder/index',
         // Админпанель:

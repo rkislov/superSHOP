@@ -86,7 +86,7 @@ class Category
         $result->execute();
 
         $row=$result->fetch();
-        return $row;
+        return $row['name'];
     }
 
     public static function getStatusText($status)

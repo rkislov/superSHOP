@@ -1582,3 +1582,92 @@ position: relative;
     text-decoration: none;
     color: purple;
 }
+.order_content{
+    width: 900px;
+    margin-left: 30px;
+    margin-top: 30px;
+    height: auto;
+    min-height: 150px;
+    border-radius: 15px;
+    background: white;
+
+}
+.order_content_table table{
+    margin: 15px;
+    width: 870px;
+    height: auto;
+    padding-bottom: 40px;
+
+
+}
+.order_content_table table thead tr{
+    font-family: "Supermolot Bold";
+    text-transform: uppercase;
+    color: #c4cdce;
+    line-height: 40px;
+    vertical-align: bottom;
+    border-bottom: 1px solid #c4cdce;
+}
+.order_content_table table tr{
+    font-family: Supermolot;
+    font-size: 16px;
+    line-height: 40px;
+    border-bottom: 1px solid #c4cdce;
+
+}
+.order_content_table table a{
+    color: red;
+    text-decoration: none;
+}
+.order_content_table table a:hover{
+    color: red;
+    text-decoration: none;
+}
+.order_itog_summ{
+    position: relative;
+    right: 50px;
+    padding-left: 50px;
+    font-size: 20px;
+}
+.order_ship_info{
+    margin-left: 30px;
+    margin-top: 40px;
+    width: 900px;
+    height: 400px;
+    border-radius: 15px;
+    background: white;
+
+}
+.order_ship_info_content{
+    width: 870px;
+    margin: 15px;
+}
+.order_ship_info_logo{
+    font-family: "Proxima Nova Bold";
+    text-transform: uppercase;
+    color: #9dacad;
+    padding: 10px;
+    line-height: 30px;
+    border-bottom: 1px solid #9dacad;
+
+}
+.order_delete{
+margin-top: 20px;
+    margin-right: 40px;
+    color: red;
+    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+}
+.order_delete:hover{
+    margin-top: 20px;
+    margin-right: 40px;
+    color: red;
+    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+}

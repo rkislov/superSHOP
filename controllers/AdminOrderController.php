@@ -20,11 +20,28 @@ class AdminOrderController extends AdminBase
     {
         self::checkAdmin();
         $order = Order::getOrderById($id);
-        $productQuantity = json_decode($order['products'], true);
-        $productIds = array_keys($productQuantity);
+        $productsQuantity = json_decode($order['products'], true);
+        $productIds = array_keys($productsQuantity);
         $products = Product::getProdustsByIds($productIds);
 
         require_once ROOT.'/views/admin_order/view.php';
         return true;
+    }
+    public function actionDeleteProduct($orderId, $productId)
+    {
+        echo $productId;
+        self::checkAdmin();
+        if (Order::deleteOrderProductItem($orderId,$productId)==1){
+            header("Location: /admin/order/view/$orderId");
+        } else{
+            header("Location: /admin/order");
+        }
+
+    }
+    public function actionDelete($id)
+    {
+        self::checkAdmin();
+        Order::deleteOrderById($id);
+        header("Location: /admin/order");
     }
 }

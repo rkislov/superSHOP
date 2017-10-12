@@ -147,140 +147,146 @@
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
     </column>
-    <key id="39" parent="10" name="PRIMARY">
+    <column id="39" parent="10" name="is_delete">
+      <Position>16</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <key id="40" parent="10" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="40" parent="11" name="id">
+    <column id="41" parent="11" name="id">
       <Position>1</Position>
       <DataType>char(40)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="41" parent="11" name="name">
+    <column id="42" parent="11" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="42" parent="11" name="price">
+    <column id="43" parent="11" name="price">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="43" parent="11" name="category_id">
+    <column id="44" parent="11" name="category_id">
       <Position>4</Position>
       <DataType>char(40)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="44" parent="11" name="is_new_hot_sale">
+    <column id="45" parent="11" name="is_new_hot_sale">
       <Position>5</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="45" parent="11" name="about">
+    <column id="46" parent="11" name="about">
       <Position>6</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="46" parent="11" name="is_recommended">
+    <column id="47" parent="11" name="is_recommended">
       <Position>7</Position>
       <DataType>int(11)|0</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="47" parent="11" name="availability">
+    <column id="48" parent="11" name="availability">
       <Position>8</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;1&apos;</DefaultExpression>
     </column>
-    <column id="48" parent="11" name="timestamp">
+    <column id="49" parent="11" name="timestamp">
       <Position>9</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
     </column>
-    <key id="49" parent="11" name="PRIMARY">
+    <key id="50" parent="11" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="50" parent="12" name="id">
+    <column id="51" parent="12" name="id">
       <Position>1</Position>
       <DataType>char(40)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="51" parent="12" name="name">
+    <column id="52" parent="12" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="52" parent="12" name="email">
+    <column id="53" parent="12" name="email">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="53" parent="12" name="password">
+    <column id="54" parent="12" name="password">
       <Position>4</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="54" parent="12" name="role">
+    <column id="55" parent="12" name="role">
       <Position>5</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="55" parent="12" name="telefon">
+    <column id="56" parent="12" name="telefon">
       <Position>6</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="56" parent="12" name="city">
+    <column id="57" parent="12" name="city">
       <Position>7</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="57" parent="12" name="street">
+    <column id="58" parent="12" name="street">
       <Position>8</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="58" parent="12" name="build">
+    <column id="59" parent="12" name="build">
       <Position>9</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="59" parent="12" name="room">
+    <column id="60" parent="12" name="room">
       <Position>10</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <key id="60" parent="12" name="PRIMARY">
+    <key id="61" parent="12" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="61" parent="13" name="id">
+    <column id="62" parent="13" name="id">
       <Position>1</Position>
       <DataType>char(40)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="62" parent="13" name="product_id">
+    <column id="63" parent="13" name="product_id">
       <Position>2</Position>
       <DataType>char(40)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="63" parent="13" name="name">
+    <column id="64" parent="13" name="name">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="64" parent="13" name="timestamp">
+    <column id="65" parent="13" name="timestamp">
       <Position>4</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
     </column>
-    <key id="65" parent="13" name="PRIMARY">
+    <key id="66" parent="13" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
