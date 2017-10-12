@@ -21,7 +21,7 @@
                     <td style="width: 120px"><?php echo Order::getStatusText($order['status']);?></td>
                     <td style="width: 150px;"><?php echo number_format( Order::getOrderTotalPrice($order['products']), 0, ',', ' ' );?>руб.</td>
                     <td style="width: 150px"><?php echo date("d.m.Y",strtotime($order['timestamp']));?> в <?php echo date("H:i",strtotime($order['timestamp']));?></td>
-                    <td style="width: 100px"><a href="/order/view/<?php echo $order['id'];?>">посмотреть</a></td>
+                    <td style="width: 100px"><a href="/admin/order/view/<?php echo $order['id'];?>">посмотреть</a></td>
                 </tr><?php endforeach;?>
             </table>
         </div>

@@ -16,4 +16,15 @@ class AdminOrderController extends AdminBase
         require_once ROOT .'/views/admin_order/index.php';
         return true;
     }
+    public function actionView($id)
+    {
+        self::checkAdmin();
+        $order = Order::getOrderById($id);
+        $productQuantity = json_decode($order['products'], true);
+        $productIds = array_keys($productQuantity);
+        $products = Product::getProdustsByIds($productIds);
+
+        require_once ROOT.'/views/admin_order/view.php';
+        return true;
+    }
 }
