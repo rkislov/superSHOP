@@ -574,6 +574,7 @@ text-decoration: underline;
     position: relative;
 }
 .user_info_fio{
+    display: inline-block;
     padding-top: 20px;
     margin-left: 40px;
     font-family: "Supermolot Light";
@@ -1459,7 +1460,7 @@ position: relative;
 .addres_info{
     display: inline-block;
     width: 450px;
-    height: 400px;
+    height: auto;
     padding-left: 30px;
     left: 30px;
 }
@@ -1467,7 +1468,7 @@ position: relative;
     width: 450px;
     display: inline-block;
     margin-left: 30px;
-    height: 380px;
+    height: auto;
     border-right: 1px solid #f6f6f6;
 
 }
@@ -1487,7 +1488,7 @@ position: relative;
 .coment_box{
     display: inline-block;
     width: 300px;
-    height: 380px;
+    height:auto;
     border-left: 1px solid #f6f6f6;
     position: relative;
     top:-260px;
@@ -1670,4 +1671,66 @@ margin-top: 20px;
     text-decoration-style: dashed;
     font-family: "Proxima Nova";
     font-size: 16px;
+}
+.orders-inform{
+    display: inline-block;
+    width: 500px;
+    position: relative;
+    left:600px;
+    top:-980px;
+}
+.user_list{
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 900px;
+    min-height: 200px;
+    height: auto;
+    background: white;
+    border-radius: 15px;
+
+}
+.user_list_table{
+    width: 870px;
+    padding: 15px;
+}
+.user_list_table table{
+    width: 870px;
+}
+.user_list_table table thead tr{
+    font-family: "Proxima Nova Bold";
+    color: #9dacad;
+    text-transform: uppercase;
+    border-bottom: 1px solid #9dacad;
+    line-height: 40px;
+}
+.user_list_table table tr{
+    font-family: "Proxima Nova";
+    color: #9dacad;
+    border-bottom: 1px solid #9dacad;
+    line-height: 50px;
+    font-size: 16px;
+    transition: 0.5s;
+}
+.user_list_table table a{
+    color: purple;
+
+}
+.user_list_table table a:hover{
+    color: purple;
+    text-decoration: none;
+
+}
+.user_list_table table tr:hover{
+    background: #f6f8fc;
+    border-left: 2px solid #8e44ad;
+}
+
+.user_list_table table thead tr:hover{
+    font-family: "Proxima Nova Bold";
+    color: #9dacad;
+    text-transform: uppercase;
+    border-bottom: 1px solid #9dacad;
+    line-height: 40px;
+    background: white;
+    border-left: 0;
 }

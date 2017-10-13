@@ -12,6 +12,7 @@ public function actionIndex()
     $categories = Category::getCategoriesList();
     $userId = User::checkLogged();
     $user = User::getUserById($userId);
+    $orders = Order::getOrdersByUserId($userId);
 
     $name = $user['name'];
     if($user['telefon']!=false){

@@ -223,4 +223,22 @@ class User
         $result->execute();
         return $result->fetchColumn();
     }
+    public static function getUsersList()
+    {
+        $db = Db::getConnection();
+        $sql = 'SELECT * FROM user ORDER BY timestamp DESC ';
+        $result = $db->query($sql);
+
+        $i=0;
+        $userList=array();
+        while ($row = $result->fetch())
+        {
+            $userList[$i]['id'] =$row['id'];
+            $userList[$i]['name'] =$row['name'];
+            $userList[$i]['email'] =$row['email'];
+            $userList[$i]['telefon'] =$row['telefon'];
+            $i++;
+        }
+        return $userList;
+    }
 }

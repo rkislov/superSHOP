@@ -42,7 +42,7 @@
                 <a href="/admin/order"><i class="fa fa-shopping-cart"></i> Заказы</a></>
         </div>
         <div class="sidemenu-button">
-            <a href="#"><i class="fa fa-user"></i> Пользователи</a>
+            <a href="/admin/user"><i class="fa fa-user"></i> Пользователи</a>
         </div>
         <div class="sidemenu-button">
             <a href="/admin/product"><i class="fa fa-inbox"></i> Товары</a>

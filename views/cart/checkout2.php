@@ -68,14 +68,14 @@
                             <textarea name="comment" placeholder="Текст коментария" cols="40" rows="7"></textarea>
                         </div>
 
-                        <input style="display: block;position: relative; top: -320px; left: 50px" class="checkout_login_submit" type="submit" name="submit" value="Продолжить">
+                        <input style="display: block;position: relative; top: -10px; left: 50px" class="checkout_login_submit" type="submit" name="submit" value="Продолжить">
                 </div>
 
                 </form>
 
             </div>
 
-            <div class="checkout1_border_inactive" style="display: block;position: relative; top: -290px;">
+            <div class="checkout1_border_inactive" style="display: block;position: relative; top: 0px;">
                 <span style="color: red;">3.</span> &nbsp;Подтверждение заказа
             </div>
 

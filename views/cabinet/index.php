@@ -58,7 +58,23 @@
                     </form>
                 </div>
                 <div class="orders-inform">
+                    <h1>Ваши заказы</h1>
+                </div>
+                <div class="priv_orders_inform" style="position: relative; left:600px; top:-980px;">
 
+                    <?php foreach ($orders as $order):?>
+
+                    <span style="padding-top: 10px"><div style="font-family: 'Proxima Nova'; font-size: 16px">№<?php echo $order['order_num'];?></div>
+                        <div style="font-family: 'Proxima Nova'; font-size: 12px;">(<?php echo number_format( Order::getOrderTotalPrice($order['products']), 0, ',', ' ' );?>руб.)</div>
+                        <div style="font-family: 'Proxima Nova'; font-size: 10px;color: #9dacad"><?php echo date("d.m.Y",strtotime($order['timestamp']));?> в <?php echo date("H:i",strtotime($order['timestamp']));?></div>
+
+                    </span>
+                        <span style="position: relative; left: 200px; top: -50px; font-family: 'Proxima Nova Bold';font-size: 20px;">
+                            <?php echo Order::getStatusText($order['status']);?>
+                        </span>
+
+
+                <?php endforeach;?>
                 </div>
             </div>
         </div>

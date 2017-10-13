@@ -41,6 +41,9 @@
         'admin/order/deleteProduct/([0-9,A-Z,-]+)/([0-9,A-Z,-]+)' => 'adminOrder/deleteProduct/$1/$2',
         'admin/order/view/([0-9,A-Z,-]+)' => 'adminOrder/view/$1',
         'admin/order' => 'adminOrder/index',
+        //Управление пользователями
+        'admin/user/update/([0-9,A-Z,-]+)' => 'adminUser/update/$1',
+        'admin/user' => 'adminUser/index',
         // Админпанель:
         'admin' => 'admin/index',
         // О магазине

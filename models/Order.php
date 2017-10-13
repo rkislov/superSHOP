@@ -211,6 +211,28 @@ class Order
         // Возвращаем данные
         return $result->fetch();
     }
+    public static function getOrdersByUserId($id)
+    {
+
+        $db = Db::getConnection();
+        // Текст запроса к БД
+        $result = $db->prepare("SELECT id, order_num, order_email, products, status, timestamp FROM order_info WHERE products IS NOT null AND products > '' AND is_delete=0 AND user_id=:id ORDER BY timestamp DESC");
+        $result->bindParam(':id',$id,PDO::PARAM_STR);
+        $result->execute();
+        $ordersList = array();
+        $i = 0;
+        while ($row = $result->fetch()) {
+            $ordersList[$i]['id'] = $row['id'];
+            $ordersList[$i]['order_num'] = $row['order_num'];
+            $ordersList[$i]['order_email'] = $row['order_email'];
+            $ordersList[$i]['status'] = $row['status'];
+            $ordersList[$i]['products'] = $row['products'];
+            $ordersList[$i]['timestamp'] = $row['timestamp'];
+            $i++;
+        }
+        return $ordersList;
+
+    }
     /**
      * Удаляет заказ с заданным id
      * @param integer $id <p>id заказа</p>
