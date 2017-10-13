@@ -19,7 +19,7 @@
                     <td style="width: 350px; color: black"><? echo $user['name'];?></td>
                     <td style="width: 200px;"><? echo $user['email'];?></td>
                     <td style="width: 200px;"><? echo $user['telefon'];?></td>
-                    <td><a href="/admin/user/update/<?echo $user['id'];?>">просмотр</a></td>
+                    <td><a href="/admin/user/view/<?echo $user['id'];?>">просмотр</a></td>
                 </tr>
                 <? endforeach;?>
             </table>

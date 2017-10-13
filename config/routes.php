@@ -42,7 +42,7 @@
         'admin/order/view/([0-9,A-Z,-]+)' => 'adminOrder/view/$1',
         'admin/order' => 'adminOrder/index',
         //Управление пользователями
-        'admin/user/update/([0-9,A-Z,-]+)' => 'adminUser/update/$1',
+        'admin/user/view/([0-9,A-Z,-]+)' => 'adminUser/view/$1',
         'admin/user' => 'adminUser/index',
         // Админпанель:
         'admin' => 'admin/index',

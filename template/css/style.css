@@ -1734,3 +1734,57 @@ margin-top: 20px;
     background: white;
     border-left: 0;
 }
+.user_info_table{
+    display: block;
+    background: white;
+    width: 900px;
+    margin-left: 20px;
+    margin-top: 30px;
+    height: 300px;
+    border-radius: 15px;
+}
+.user_info_table_header{
+    width: 870px;
+    margin: 15px;
+    border-bottom: 1px solid #9dacad;
+    color: #9dacad;
+    font-family: "Proxima Nova Bold";
+    text-transform: uppercase;
+    line-height: 40px;
+}
+.user_info_order{
+    display: block;
+    width: 900px;
+    height: auto;
+    min-height: 200px;
+    background: white;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding-bottom: 40px;
+}
+.user_info_order table{
+    width: 870px;
+    margin: 15px;
+    line-height: 50px;
+}
+.user_info_order table tr{
+    border-bottom: 1px solid #9dacad;
+    font-family: "Proxima Nova";
+}
+.del_user{
+    position: relative;
+    right: -350px;
+    margin-top: 30px;
+    color: red;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+.del_user:hover{
+    position: relative;
+    right: -350px;
+    margin-top: 30px;
+    color: red;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
