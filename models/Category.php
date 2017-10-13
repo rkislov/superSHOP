@@ -88,7 +88,21 @@ class Category
         $row=$result->fetch();
         return $row['name'];
     }
+    public static function getCategoryRowById($id)
+    {
+        $db = Db::getConnection();
+        $sql = 'SELECT * FROM category WHERE id = :id';
 
+        $result = $db->prepare($sql);
+        $result-> bindParam(':id',$id,PDO::PARAM_STR);
+
+        $result->setFetchMode(PDO::FETCH_ASSOC);
+
+        $result->execute();
+
+        $row=$result->fetch();
+        return $row;
+    }
     public static function getStatusText($status)
     {
         switch ($status){

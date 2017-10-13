@@ -34,7 +34,7 @@ class AdminCategoryController extends AdminBase
     }
     public function actionUpdate($id)
     {
-        $category = Category::getCategoryById($id);
+        $category = Category::getCategoryRowById($id);
         $productListByCategory = Product::getProductsListByCategory($id);
         require_once ROOT .'/views/admin_category/update.php';
         return true;
