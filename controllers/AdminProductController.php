@@ -62,11 +62,19 @@ class AdminProductController extends AdminBase
         $productId = $id;
         $product = Product::getProductById($productId);
         $imagesList = Image::getImagesByProductId($productId);
-        $variantsList = Product::getVariantById($productId);
+        $variantsList = Product::getVariantsById($productId);
 
 
 
         require_once ROOT.'/views/admin_product/update.php';
         return true;
     }
+    public function actionDelete($id)
+    {
+        self::checkAdmin();
+        Product::deleteProductById($id);
+
+        header("location: /admin/category");
+    }
+
 }

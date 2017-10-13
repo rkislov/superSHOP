@@ -116,7 +116,7 @@
     color:#099d48;
     text-decoration: underline;
     text-decoration-style: dashed;">
-                <a href="/product/delete/<?php echo $product['id'];?>" style="background: transparent;
+                <a href="/admin/product/delete/<?php echo $product['id'];?>" style="background: transparent;
     outline: none;
     border: none;
     color:#bb3232;

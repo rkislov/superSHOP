@@ -279,7 +279,7 @@ class Product
         $sql = 'DELETE FROM product WHERE id = :id';
         // Получение и возврат результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
-        $result->bindParam(':id', $id, PDO::PARAM_INT);
+        $result->bindParam(':id', $id, PDO::PARAM_STR);
         return $result->execute();
     }
     /**
